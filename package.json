@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "server": "node server/server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Auth0",
   "license": "MIT",
@@ -13,7 +15,8 @@
     "react-dom": "^0.14.3",
     "react-redux": "^4.0.4",
     "redux": "^3.0.5",
-    "redux-thunk": "^0.1.0"
+    "redux-thunk": "^0.1.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-core": "^5.6.18",
@@ -23,5 +26,6 @@
     "webpack": "^1.9.11",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.2.0"
-  }
+  },
+  "snyk": true
 }
